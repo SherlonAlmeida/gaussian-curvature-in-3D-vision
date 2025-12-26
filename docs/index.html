@@ -227,34 +227,34 @@ figure {
 
     <meta name="google-site-verification" content="FxvrYx4mHxCIZntr6Xi_SBt8ZTkG_EJRubp1bTN307E"/>
     
-    <title>The Role of Cyclopean-Eye in Stereo Vision</title>
-    <meta name="description" content="The Role of Cyclopean-Eye in Stereo Vision.">
+    <title>Towards Understanding 3D Vision: the Role of Gaussian Curvature</title>
+    <meta name="description" content="Towards Understanding 3D Vision: the Role of Gaussian Curvature.">
     
      <!-- SEO -->
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://SherlonAlmeida.github.io/cyclopean-stereo/">
+    <link rel="canonical" href="https://sherlonalmeida.github.io/gaussian-curvature-in-3D-vision/">
     
     <!-- OpenGraph -->
-    <meta property="og:description" content="The Role of Cyclopean-Eye in Stereo Vision"/>
-    <meta property="og:abreviation" content="Cyclopean-Stereo"/>
-    <meta property="og:url" content="https://SherlonAlmeida.github.io/cyclopean-stereo/">
+    <meta property="og:description" content="Towards Understanding 3D Vision: the Role of Gaussian Curvature"/>
+    <meta property="og:abreviation" content="Gaussian-Curvature-in-3D-Vision"/>
+    <meta property="og:url" content="https://sherlonalmeida.github.io/gaussian-curvature-in-3D-vision/">
     <meta property="og:type" content="website">
-    <meta property="og:image" itemprop="image" content="https://github.com/SherlonAlmeida/cyclopean-stereo/blob/master/docs/assets/cyclopean_stereo_thumbnail.png">
+    <meta property="og:image" itemprop="image" content="https://sherlonalmeida.github.io/gaussian-curvature-in-3D-vision/blob/master/docs/assets/gauss_curv_thumbnail.png">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 
     <!-- Twitter --> 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@SherlonAlmeida">
-    <meta name="twitter:title" content="The Role of Cyclopean-Eye in Stereo Vision">
-    <meta name="twitter:description" content="The Role of Cyclopean-Eye in Stereo Vision.">
-    <meta name="twitter:image" content="https://github.com/SherlonAlmeida/cyclopean-stereo/blob/master/docs/assets/overview.png">
+    <meta name="twitter:title" content="Towards Understanding 3D Vision: the Role of Gaussian Curvature">
+    <meta name="twitter:description" content="Towards Understanding 3D Vision: the Role of Gaussian Curvature.">
+    <meta name="twitter:image" content="https://sherlonalmeida.github.io/gaussian-curvature-in-3D-vision/blob/master/docs/assets/gauss_curv_thumbnail.png">
 </head>
 
 
 <body>
 <div class="container">
     <div class="paper-title">
-        <h1>The Role of Cyclopean-Eye in Stereo Vision</h1>
+        <h1>Towards Understanding 3D Vision: the Role of Gaussian Curvature</h1>
     </div>
 
     <div id="authors">
@@ -273,18 +273,18 @@ figure {
 
         <div style="clear: both">
             <div class="paper-btn-parent">
-                <a class="paper-btn" href="assets/pre_print-the_role_of_cyclopean_eye_in_stereo_vision.pdf">
+                <a class="paper-btn" href="assets/pre_print-towards_understanding_3d_vision_the_role_of_gaussian_curvature.pdf">
                     <span class="material-icons"> description </span>
                     Paper
                 </a>
-                <a class="paper-btn" href="https://github.com/SherlonAlmeida/cyclopean-stereo">
+                <a class="paper-btn" href="https://github.com/SherlonAlmeida/gaussian-curvature-in-3D-vision">
                     <span class="material-icons"> code </span>
                     Code
                 </a>
-                <a class="paper-btn" href="https://github.com/SherlonAlmeida/cyclopean-stereo/blob/master/demo/CyclopeanStereo-Demo.ipynb">
+                <!-- <a class="paper-btn" href="https://sherlonalmeida.github.io/gaussian-curvature-in-3D-vision/blob/master/demo/GaussianCurvature-Demo.ipynb">
                     <span class="material-icons"> code </span>
                     Demo
-                </a>
+                </a> -->
             </div>
         </div>
     </div>
@@ -293,7 +293,7 @@ figure {
         <h2>Abstract</h2>
         <hr>
     <p>
-        This work investigates the geometric foundations of modern stereo vision systems, with a focus on how 3D structure and human-inspired perception contribute to accurate depth reconstruction. We revisit the Cyclopean Eye model and propose novel geometric constraints that account for occlusions and depth discontinuities. Our analysis includes the evaluation of stereo feature matching quality derived from deep learning models, as well as the role of attention mechanisms in recovering meaningful 3D surfaces. Through both theoretical insights and empirical studies on real datasets, we demonstrate that combining strong geometric priors with learned features provides internal abstractions for understanding stereo vision systems.
+        Recent advances in computer vision have predominantly relied on data-driven approaches that leverage deep learning and large-scale datasets. Deep neural networks have achieved remarkable success in tasks such as stereo matching and monocular depth reconstruction. However, these methods lack explicit models of 3D geometry that can be directly analyzed, transferred across modalities, or systematically modified for controlled experimentation. We investigate the role of Gaussian curvature in 3D surface modeling. Besides Gaussian curvature being an invariant quantity under change of observers or coordinate systems, we demonstrate using the Middlebury stereo dataset that it offers a sparse and compact description of 3D surfaces. Furthermore, we show a strong correlation between the performance rank of top state-of-the-art stereo and monocular methods and the low total absolute Gaussian curvature. We propose that this property can serve as a geometric prior to improve future 3D reconstruction algorithms.
     </p>
     </section>
 
@@ -311,11 +311,36 @@ figure {
         <hr>
         <p>
             <figure style="width: 100%; float: center">
-            <img class="screenshot-elg" src="assets/overview.png">
+            <p  style="text-align:justify;">
+            In this paper we study the importance of the Gaussian curvature in 3D vision, presenting an analysis on 3D reconstruction provided by stereo algorithms on the Middlebury benchmark.
+            We observed that the best techniques tend to reconstruct surfaces with low Gaussian curvature and more consistent normals. See some experiments below:
+            </p>
 
-            In this paper we study the importance of the cyclopean eye in stereo vision, presenting how occlusions, textureless/homogeneous regions, and repetitive patterns are interpreted by the modern Deep Learning (DL) stereo-vision approaches.
-            Also, we discuss the cyclopean view on the human perception perspective, and how it can be used to improve the DL stereo-vision systems.
+            <img class="screenshot-elg" src="assets/curvature_metrics.png">
+            <p style="text-align:center">
+            This table presents the Middlebury benchmark ranking for the 15 training images, with techniques listed in descending LGC order. Superscripts indicate each method’s rank among the compared techniques for the metrics AvgError, RMS, Bad 2.0, and Bad 4.0. Darker cell shading highlights better performance, indicating the technique is among the Top 1, Top 3, or Top 5 best approaches. Notably, top-performing methods (Group A) generally exhibit higher LGC (i.e., lower GC).
+            </p>
 
+            <img class="screenshot-elg" src="assets/curvature.png">
+            <p style="text-align:center">
+            GT x SOTA approaches: a point-wise analysis of curvature for "Piano" image. Black coordinates represent values of $|K| > 1{,}000m^{-2}$. For the GT, black coordinates also represent NaN values, which are measurement inconsistencies during Middlebury disparity estimation. In the second row, we applied smoothing with $\sigma = 2\, m$ in the 3D point cloud before computing the GC.
+            Interpretation: Foundation-Stereo estimates lower Gaussian curvature than Selective-IGEV.
+            </p>
+
+            <img class="screenshot-elg" src="assets/normals_metrics.png">
+            <p style="text-align:center">
+            This table presents techniques listed in ascending Normal Average Error (NormAvg) order for the 15 Middlebury training images. Superscripts indicate the lowest 1-5th Normal Error (NormalsErr) per technique for each one of the 15 Middlebury images. Darker cell shading highlights lower NormalsErr, indicating the technique is among the Top 1, Top 3, or Top 5 approaches with the lowest NormalsErr. Notably, the top-performing methods are from the Group A, and predict surface normals that are closely aligned with the ground truth.
+            </p>
+
+            <img class="screenshot-elg" src="assets/normals.png">
+            <p style="text-align:center">
+            Normals Analysis: Qualitative comparison on normals reconstruction for Piano data.
+            Interpretation: Selective-IGEV reconstructs noisier surfaces, while Foundation-Stereo and BLMT-Stereo present consistent normals. Also, BLMT-Stereo has sharper results near the edges (depth discontinuities).
+            </p>
+
+            <p  style="text-align:justify;">
+                In summary, our work enhances the interpretability and understanding of 3D vision by highlighting Gaussian Curvature as an intrinsic geometric prior for indoor 3D surfaces. Grounded in modern deep learning data, our approach underscores the importance of 3D geometric modeling in capturing critical visual information and can guide the development of next-generation vision systems.
+            </p>
         </figure>
         </p>
     </section>
@@ -325,14 +350,14 @@ figure {
         <hr>
         <div class="flex-row">
             <div style="box-sizing: border-box; padding: 16px; margin: auto;">
-                <a href="assets/pre_print-the_role_of_cyclopean_eye_in_stereo_vision.pdf"><img class="screenshot" src="assets/cyclopean_stereo_thumbnail.png"></a>
+                <a href="assets/pre_print-towards_understanding_3d_vision_the_role_of_gaussian_curvature.pdf"><img class="screenshot" src="assets/gauss_curv_thumbnail.png"></a>
             </div>
             <div style="width: 60%">
-                <p><b>The Role of Cyclopean-Eye in Stereo Vision</b></p>
+                <p><b>Towards Understanding 3D Vision: the Role of Gaussian Curvature</b></p>
                 <p>Sherlon Almeida da Silva, Davi Geiger, Luiz Velho, and Moacir Antonelli Ponti</p>
 
-                <div><span class="material-icons"> description </span><a href="assets/pre_print-the_role_of_cyclopean_eye_in_stereo_vision.pdf"> Paper preprint (PDF, 12 MB)</a></div>
-                <div><span class="material-icons"> description </span><a href="https://arxiv.org/abs/2506.20900"> arXiv version</a></div>
+                <div><span class="material-icons"> description </span><a href="assets/pre_print-towards_understanding_3d_vision_the_role_of_gaussian_curvature.pdf"> Paper preprint (PDF, 12 MB)</a></div>
+                <div><span class="material-icons"> description </span><a href="https://arxiv.org/abs/2508.11825"> arXiv version</a></div>
                 <!-- <div><span class="material-icons"> image </span><a href="assets/TUNER-CVPR-poster.pdf"> Poster</a></div> -->
                 <!-- <div><span class="material-icons"> insert_comment </span><a href="assets/novello2025tuning.bib"> BibTeX</a></div>  -->
                 <!-- <div><span class="material-icons"> videocam </span><a href=""> Soon</a></div> -->
@@ -345,13 +370,12 @@ figure {
     <section id="bibtex">
             <h2>Citation</h2>
             <hr>
-            <pre><code>@inproceedings {
-    dasilva2025stereo,
-    title={The Role of Cyclopean-Eye in Stereo Vision},
+            <pre><code>@inproceedings{dasilva2026gausscurv,
+    title={Towards Understanding 3D Vision: the Role of Gaussian Curvature},
     author={da Silva, Sherlon Almeida and Geiger, Davi and Velho, Luiz and Ponti, Moacir Antonelli},
-    booktitle={Iberoamerican Congress on Pattern Recognition},
-    year={2025},
-    organization={Springer}
+    booktitle={21st International Conference on Computer Vision Theory and Applications},
+    year={2026},
+    organization={SCITEPRESS}
 }
             </code></pre>
     </section>

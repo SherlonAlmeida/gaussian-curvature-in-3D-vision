@@ -18,10 +18,10 @@
   ³ Instituto de Matemática Pura e Aplicada (IMPA)
 </p>
 
-<!-- <p align="center" style="font-size:12px">
-  <a href="https://sherlonalmeida.github.io/cyclopean-stereo/">[Project Page]</a>
-  <a href="https://github.com/SherlonAlmeida/cyclopean-stereo/blob/master/demo/CyclopeanStereo-Demo.ipynb">[Demo]</a>
-</p> -->
+<p align="center" style="font-size:12px">
+  <a href="https://sherlonalmeida.github.io/gaussian-curvature-in-3D-vision/">[Project Page]</a>
+  <!-- <a href="https://github.com/SherlonAlmeida/cyclopean-stereo/blob/master/demo/CyclopeanStereo-Demo.ipynb">[Demo]</a> -->
+</p>
 
 **Abstract**
 <p align="justify" style="font-size:12px">
@@ -30,7 +30,7 @@ Recent advances in computer vision have predominantly relied on data-driven appr
 
 # Citation
 ```
-@inproceedings{dasilva2025stereo,
+@inproceedings{dasilva2026gausscurv,
   title={Towards Understanding 3D Vision: the Role of Gaussian Curvature},
   author={da Silva, Sherlon Almeida and Geiger, Davi and Velho, Luiz and Ponti, Moacir Antonelli},
   booktitle={21st International Conference on Computer Vision Theory and Applications},

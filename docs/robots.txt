@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sherlonalmeida.github.io/gaussian-curvature-in-3D-vision/sitemap.xml
