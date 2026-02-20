@@ -21,7 +21,8 @@
 <p align="center" style="font-size:12px">
   <a href="https://sherlonalmeida.github.io/gaussian-curvature-in-3D-vision/">[Project Page]</a>
   <!-- <a href="https://github.com/SherlonAlmeida/cyclopean-stereo/blob/master/demo/CyclopeanStereo-Demo.ipynb">[Demo]</a> -->
-  <a href="https://github.com/SherlonAlmeida/gaussian-curvature-in-3D-vision/blob/master/docs/VISAPP2026-Presentation.pdf">[Presentation (PDF)]</a>
+  <a href="https://github.com/SherlonAlmeida/gaussian-curvature-in-3D-vision/blob/master/docs/VISAPP2026-Presentation.pdf">[Slides]</a>
+  <a href="https://youtu.be/wJBmacOcdHQ">[Presentation]</a>
 </p>
 
 **Abstract**
